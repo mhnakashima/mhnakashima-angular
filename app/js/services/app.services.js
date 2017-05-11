@@ -12,9 +12,10 @@ app.
 				$http.get('./data/config.json').then(
 					function(result){
 						console.log(result);
+						resolve(result);
 					},
 					function(err){
-						console.log(err);
+						reject(err);
 					}
 				)
 			})

@@ -1,0 +1,63 @@
+[
+  {
+  "navigation": {
+      "header":{
+        "logo":  "./images/logo.png",
+        "name":  "Michael Nakashima",
+        "title": "FrontEnd Developer",
+        "navigation": {
+          [
+            "home", "portfólio", "sobre", "depoimentos", "contato"
+          ]
+        }
+      }
+  },
+  "carousel": {
+    [
+      {
+        "title": "site",
+        "phrase": "do it"
+      }
+    ]
+  }
+}]
+
+
+[
+  {
+  "id": 1,
+  "first_name": "Amalee",
+  "last_name": "Shord",
+  "email": "ashord0@taobao.com",
+  "gender": "Female",
+  "ip_address": "177.129.115.23"
+}, {
+  "id": 2,
+  "first_name": "Garrek",
+  "last_name": "Rawsthorne",
+  "email": "grawsthorne1@nationalgeographic.com",
+  "gender": "Male",
+  "ip_address": "207.80.70.20"
+}, {
+  "id": 3,
+  "first_name": "Sebastiano",
+  "last_name": "Stienton",
+  "email": "sstienton2@dmoz.org",
+  "gender": "Male",
+  "ip_address": "229.99.184.33"
+}, {
+  "id": 4,
+  "first_name": "Wolfy",
+  "last_name": "Purdey",
+  "email": "wpurdey3@nps.gov",
+  "gender": "Male",
+  "ip_address": "152.113.45.70"
+}, {
+  "id": 5,
+  "first_name": "Joya",
+  "last_name": "Foley",
+  "email": "jfoley4@reference.com",
+  "gender": "Female",
+  "ip_address": "213.90.88.240"
+}
+]

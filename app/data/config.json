@@ -1,1 +1,13 @@
-c
+{
+  "navigation": {
+      "header":{
+          "logo": "./images/logo.png",
+          "name":  "Michael Nakashima",
+          "title": "FrontEnd Developer",
+          "navigationURL": [
+              "home", "portfólio", "sobre", "depoimentos", "contato"
+          ]
+          
+      }
+  }
+}

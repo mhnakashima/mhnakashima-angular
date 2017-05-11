@@ -1,1 +1,6 @@
-var app = angular.module('mhnakashima', ['ngRoute', 'ngAnimate'])
+var app = angular
+				.module('mhnakashima', ['ngRoute', 'ngAnimate'])
+				.config(function(){
+
+				})
+

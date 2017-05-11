@@ -17,7 +17,7 @@
 			<div class="header navigationWrapper" ng-controller="navigationController as navigation">
 				
 				<div class="logoWrapper">
-					<img src="images/logo.png" alt="gráfico logotipo" />
+					<img ng-src="{{navigation.logo}}" alt="gráfico logotipo" />
 
 					<div class="holder">
 						<h1>Michael Nakashima</h1>
@@ -41,6 +41,7 @@
 				<ul class="carousel">
 					<li ng-repeat="item in navigation.carouselItems">
 						<h3>{{item.title}}</h3>
+						<p>{{item.phrase}}</p>
 					</li>
 				</ul>
 			</div>
