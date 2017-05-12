@@ -1,27 +1,14 @@
 app.
-	factory('AppServices', AppServices);
+	service('AppServices', ['$http', '$rootScope', function ($http, $rootScope) {
+	    var self = this;
+	    self.site = {};
 
-	function AppServices($http, $q){
-		
-		var getSiteInformation = getSiteInformation;
-		var siteInfo;
+	    self.loadConfiguration = function () {
+	        $http.get('./data/config.json').then(function (result) {
+	            self.site = result.data;
+	            $rootScope.$broadcast('AppServices:loadConfiguration');
+	        });
+	    };
 
-		function getSiteInformation(){
-
-			return $q(function(resolve, reject){
-				$http.get('./data/config.json').then(
-					function(result){
-						console.log(result);
-						resolve(result);
-					},
-					function(err){
-						reject(err);
-					}
-				)
-			})
-		}
-
-		return{
-			getSiteInformation: getSiteInformation
-		};
-	}
+	    self.loadConfiguration();
+	}]);

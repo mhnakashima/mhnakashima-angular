@@ -17,21 +17,17 @@
 			<div class="header navigationWrapper" ng-controller="navigationController as navigation">
 				
 				<div class="logoWrapper">
-					<img ng-src="{{navigation.logo}}" alt="gráfico logotipo" />
-
+				    <img ng-src="{{navigation.info.logo}}" alt="gráfico logotipo" />
+					
 					<div class="holder">
-						<h1>Michael Nakashima</h1>
-						<span>FrontEnd Developer</span>
+						<h1 ng-bind="navigation.info.name"></h1>
+						<span ng-bind="navigation.info.title"></span>
 					</div>
 				</div>
 
 				<nav>
 					<ul>
-						<li><a href="$">Home</a></li>
-						<li><a href="$">Portfólio</a></li>
-						<li><a href="$">Sobre</a></li>
-						<li><a href="$">Depoimentos</a></li>
-						<li><a href="$">Contato</a></li>
+						<li ng-repeat="link in navigation.info.navigationURL"><a ng-href="'' + link">{{link}}</a></li>						
 					</ul>
 				</nav>
 			</div>

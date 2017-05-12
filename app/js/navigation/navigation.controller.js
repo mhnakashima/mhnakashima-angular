@@ -1,8 +1,12 @@
 app
-	.controller('navigationController', function(AppServices){
+	.controller('navigationController', function($scope, AppServices){
 
 		var self = this;
+		self.info = {};
 
-		self.info = AppServices.getSiteInformation();
-		console.log(self.info);
+		$scope.$on('AppServices:loadConfiguration', function(){
+			self.info = AppServices.site.navigation.header;
+
+			console.log(self.info);
+		})
 	})
